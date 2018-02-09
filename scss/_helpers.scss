@@ -1,0 +1,52 @@
+/* HELPERS */
+
+.image-inline {
+	display: inline-block;
+}
+
+.image-center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.flex {
+	display: flex;
+
+	&--center {
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+}
+
+.text-highlight {
+	color: $primary-color;
+}
+
+.sprite {
+	text-indent: -9999px;
+	background: url(../img/sprites.png) left top no-repeat;
+	background-size: 57px 122px;
+
+	&.arrow {
+		display: inline-block;
+		width: 19px;
+		height: 57px;
+
+		&--next {
+			background-position: -38px 0;
+		}
+
+	}
+
+}
+
+/* sumo me hack */
+
+@media (max-width:768px) {
+	.sumome-stylebufferbottom-shim {
+		position: relative;
+		z-index: 50;
+		background: #fff;
+	}
+}

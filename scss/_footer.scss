@@ -1,0 +1,97 @@
+.site-footer {
+	background: $orange;
+	padding: 35px 0;
+	position: relative;
+	z-index: 20;
+}
+
+.social-footer {
+
+	padding-top: 5px;
+
+	@media (max-width: 1199px) {
+		text-align: center;
+	}
+
+	.social-callout {
+		display: inline-block;
+		font-family: $primary-font;
+		font-size: 20px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		color: #000000;
+		margin-right: 20px;
+
+		@media (max-width: 767px) {
+			display: block;
+			width: 100%;
+		}
+
+	}
+
+	&__list {
+		display: inline-block;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		@media (max-width: 767px) {
+			display: block;
+			width: 100%;
+			margin: 20px auto;
+		}
+	}
+
+	&__item {
+		display: inline;
+		padding: 5px;
+
+		a {
+			color: #000;
+		}
+
+	}
+
+	&__logo {
+	}
+
+}
+
+.copyright {
+	text-align: right;
+	margin: 0;
+	padding: 0;
+	color: #000000;
+	font-family: $primary-font;
+	font-size: 16px;
+
+	@media (max-width: 1199px) {
+		text-align: center;
+	}
+
+	&__year {
+		vertical-align: 15px;
+	}
+
+	img {
+		display: inline;
+		vertical-align: 10px;
+		margin-left: 10px;
+	}
+
+	&__tag {
+		color: #ffffff;
+		font-size: 28px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		padding-left: 40px;
+		vertical-align: 8px;
+
+		@media (max-width: 767px) {
+			display: block;
+			width: 100%;
+			padding-left: 0;
+		}
+	}
+
+}

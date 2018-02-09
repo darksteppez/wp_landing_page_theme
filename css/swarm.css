@@ -1,0 +1,417 @@
+/* sass bootstrapper */
+/* variables scss */
+/* HELPERS */
+.image-inline {
+  display: inline-block; }
+
+.image-center {
+  margin-left: auto;
+  margin-right: auto; }
+
+.flex {
+  display: flex; }
+  .flex--center {
+    justify-content: center;
+    align-items: center;
+    height: 100%; }
+
+.text-highlight {
+  color: #f79625; }
+
+.sprite {
+  text-indent: -9999px;
+  background: url(../img/sprites.png) left top no-repeat;
+  background-size: 57px 122px; }
+  .sprite.arrow {
+    display: inline-block;
+    width: 19px;
+    height: 57px; }
+    .sprite.arrow--next {
+      background-position: -38px 0; }
+
+/* sumo me hack */
+@media (max-width: 768px) {
+  .sumome-stylebufferbottom-shim {
+    position: relative;
+    z-index: 50;
+    background: #fff; } }
+h4 {
+  font-family: "Fjalla One", sans-serif; }
+
+/* header scss */
+/* HEADER */
+.site-header {
+  /*background: url(../img/header-bg.jpg) center top no-repeat;
+  background-attachment: fixed;
+  background-size: cover;*/
+  font-family: "Fjalla One", sans-serif; }
+
+.ticket-sticky {
+  display: none;
+  width: 220px;
+  position: fixed;
+  top: 0;
+  right: 60px;
+  z-index: 100;
+  font-family: "Fjalla One", sans-serif;
+  text-align: center;
+  padding: 5px 10px;
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: uppercase; }
+  .ticket-sticky__link {
+    display: block;
+    background: #f79625;
+    width: 100%;
+    padding: 10px; }
+    .ticket-sticky__link:hover {
+      background: #000; }
+  .ticket-sticky__link, .ticket-sticky__link:hover, .ticket-sticky__link:visited {
+    color: #fff;
+    text-decoration: none; }
+  .ticket-sticky--stuck {
+    display: block; }
+  @media (max-width: 768px) {
+    .ticket-sticky {
+      padding: 5px;
+      width: 100%;
+      margin: 0;
+      left: 0;
+      right: auto; } }
+
+.hero-slider {
+  position: fixed;
+  width: 100%;
+  max-width: 100%; }
+
+.hero-content {
+  position: relative; }
+
+.site-title a:hover {
+  text-decoration: none; }
+@media (max-width: 767px) {
+  .site-title {
+    text-align: center; } }
+
+.header-date {
+  vertical-align: -15px; }
+
+.onsale-banner {
+  position: relative;
+  background: #f79625;
+  width: 240px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /*margin: 0 0 0 auto;*/
+  margin: 30px 0 0 auto;
+  /*&:after {
+  	content: '';
+  	border-top: 40px solid $primary-color;
+  	border-right: 120px solid transparent;
+  	border-left: 120px solid transparent;
+  	border-bottom: 10px solid transparent;
+  	width: 240px;
+  	left: 0;
+  	top: 73px;
+  	position: relative;
+  	z-index: 10;
+  }*/ }
+  .onsale-banner:hover {
+    background: #000; }
+  @media (max-width: 767px) {
+    .onsale-banner {
+      margin: 0 auto; } }
+  .onsale-banner__link:hover {
+    text-decoration: none; }
+  .onsale-banner__small {
+    color: white;
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 36px;
+    clear: both;
+    display: block; }
+    .onsale-banner__small:hover {
+      text-decoration: none; }
+  .onsale-banner__large {
+    color: white;
+    text-transform: uppercase;
+    font-size: 60px;
+    line-height: 62px;
+    clear: both;
+    display: block; }
+  .onsale-banner__star {
+    color: white;
+    clear: both;
+    display: block;
+    padding: 15px 0;
+    position: absolute;
+    z-index: 20;
+    width: 100%; }
+
+.statement {
+  margin-top: 160px; }
+
+.black-white {
+  background: rgba(255, 255, 255, 0.8);
+  color: #000000;
+  padding: 20px;
+  margin-bottom: 40px;
+  text-transform: uppercase; }
+  .black-white h2 {
+    font-family: "Fjalla One", sans-serif;
+    font-size: 42px;
+    line-height: 46px;
+    margin: 0; }
+  .black-white--small {
+    text-transform: none;
+    font-size: 20px;
+    line-height: 24px; }
+    .black-white--small p {
+      margin: 0;
+      padding: 0; }
+
+.site-footer {
+  background: #f79625;
+  padding: 35px 0;
+  position: relative;
+  z-index: 20; }
+
+.social-footer {
+  padding-top: 5px; }
+  @media (max-width: 1199px) {
+    .social-footer {
+      text-align: center; } }
+  .social-footer .social-callout {
+    display: inline-block;
+    font-family: "Fjalla One", sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-right: 20px; }
+    @media (max-width: 767px) {
+      .social-footer .social-callout {
+        display: block;
+        width: 100%; } }
+  .social-footer__list {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    @media (max-width: 767px) {
+      .social-footer__list {
+        display: block;
+        width: 100%;
+        margin: 20px auto; } }
+  .social-footer__item {
+    display: inline;
+    padding: 5px; }
+    .social-footer__item a {
+      color: #000; }
+
+.copyright {
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 16px; }
+  @media (max-width: 1199px) {
+    .copyright {
+      text-align: center; } }
+  .copyright__year {
+    vertical-align: 15px; }
+  .copyright img {
+    display: inline;
+    vertical-align: 10px;
+    margin-left: 10px; }
+  .copyright__tag {
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-left: 40px;
+    vertical-align: 8px; }
+    @media (max-width: 767px) {
+      .copyright__tag {
+        display: block;
+        width: 100%;
+        padding-left: 0; } }
+
+/* GENERAL SITE CONTENT */
+.site-content {
+  position: relative;
+  z-index: 10;
+  background: #fff; }
+
+/* LANDING */
+.content-area--40 {
+  margin: 40px auto; }
+
+.wood-bg {
+  background: url(../img/wood-bg.jpg) center top repeat; }
+  .wood-bg--fixed {
+    background-attachment: fixed; }
+
+.newsletter {
+  margin: 50px auto;
+  z-index: 20;
+  position: relative; }
+  .newsletter__label {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Fjalla One", sans-serif;
+    font-size: 26px;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+  .newsletter__input-group {
+    background: #f79625;
+    padding: 5px; }
+  .newsletter__email {
+    font-size: 20px;
+    color: #000000;
+    webkit-appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    border-radius: 0;
+    width: 80%;
+    font-family: "Fjalla One", sans-serif;
+    height: 50px;
+    text-align: center; }
+    @media (max-width: 767px) {
+      .newsletter__email {
+        width: 100%; } }
+  .newsletter__submit[type="submit"] {
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    background: #f79625;
+    width: 19.5%;
+    border: none;
+    font-family: "Fjalla One", sans-serif;
+    height: 50px;
+    padding: 0; }
+    .newsletter__submit[type="submit"]:hover {
+      background: #000;
+      color: #fff; }
+    @media (max-width: 767px) {
+      .newsletter__submit[type="submit"] {
+        width: 100%; } }
+
+.newsletter-sticky--stuck {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: #f79625;
+  padding: 10px; }
+  .newsletter-sticky--stuck .newsletter {
+    width: 80%;
+    margin: 10px auto; }
+    .newsletter-sticky--stuck .newsletter__label {
+      font-size: 16px; }
+    .newsletter-sticky--stuck .newsletter__email {
+      font-size: 16px;
+      height: 30px; }
+    .newsletter-sticky--stuck .newsletter__submit {
+      background: #f79625;
+      border: 2px solid #fff;
+      color: #fff;
+      font-size: 16px;
+      height: 30px; }
+      .newsletter-sticky--stuck .newsletter__submit:hover {
+        background: #000;
+        color: #fff;
+        border: none; }
+      @media (max-width: 767px) {
+        .newsletter-sticky--stuck .newsletter__submit {
+          margin-top: 10px; } }
+
+.up-arrow {
+  border-bottom: 40px solid #ffffff;
+  border-right: 40px solid transparent;
+  border-left: 40px solid transparent;
+  border-top: 40px solid transparent;
+  position: absolute;
+  display: block;
+  bottom: 0;
+  right: 64px; }
+  @media (max-width: 991px) {
+    .up-arrow {
+      display: none; } }
+
+.mission-statement {
+  margin: 70px auto 160px auto;
+  text-align: center;
+  color: #000000;
+  font-family: "Fjalla One", sans-serif; }
+  .mission-statement__headline {
+    font-size: 32px;
+    text-transform: uppercase;
+    margin: 0 auto 40px auto; }
+  .mission-statement__content {
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0 auto;
+    padding: 0; }
+
+.benefits {
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 60px; }
+  .benefits__row {
+    margin-top: -90px; }
+  .benefits__img {
+    border: 13px solid #ffffff; }
+  .benefits__headline {
+    font-family: "Fjalla One", sans-serif;
+    font-size: 52px;
+    margin: 50px auto 20px auto;
+    text-transform: uppercase; }
+  .benefits__content {
+    font-family: "Fjalla One", sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0 auto;
+    padding: 0; }
+
+/* logo slideshow */
+.sponsors {
+  padding: 65px 0; }
+
+.logo-header {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+.logo-slider {
+  display: flex; }
+  .logo-slider__prev, .logo-slider__slideshow, .logo-slider__next {
+    display: inline-block; }
+  .logo-slider__prev, .logo-slider__next {
+    width: 10%;
+    margin: 0;
+    text-align: center; }
+  .logo-slider__slideshow {
+    width: 80%;
+    margin: 0; }
+  .logo-slider__slide img {
+    padding: 5px; }
+
+/* general pages */
+.page-title {
+  font-size: 36px;
+  font-family: "Fjalla One", sans-serif;
+  text-align: center;
+  text-transform: uppercase; }
+
+.success-message {
+  font-size: 24px;
+  font-family: "Fjalla One", sans-serif;
+  text-align: center;
+  margin: 0 auto; }
+
+/*# sourceMappingURL=swarm.css.map */

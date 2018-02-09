@@ -1,0 +1,180 @@
+/* header scss */
+
+/* HEADER */
+
+.site-header {
+	/*background: url(../img/header-bg.jpg) center top no-repeat;
+	background-attachment: fixed;
+	background-size: cover;*/
+	font-family: $primary-font;
+}
+
+.ticket-sticky {
+	display: none;
+	width: 220px;
+	position: fixed;
+	top: 0;
+	right: 60px;
+	z-index: 100;
+	font-family: $primary-font;
+	text-align: center;
+	padding: 5px 10px;
+	font-weight: bold;
+	font-size: 24px;
+	text-transform: uppercase;
+
+	&__link {
+		display: block;
+		background: $primary-color;
+		width: 100%;
+		padding: 10px;
+
+		&:hover {
+			background: #000;
+		}
+
+	}
+
+	&__link, &__link:hover, &__link:visited {
+		color: #fff;
+		text-decoration: none;
+	}
+
+	&--stuck {
+		display: block;
+	}
+
+	@media (max-width: 768px) {
+		padding: 5px;
+		width: 100%;
+		margin: 0;
+		left: 0;
+		right: auto;
+
+	}
+}
+
+.hero-slider {
+	position: fixed;
+	width: 100%;
+	max-width: 100%;
+}
+
+.hero-content {
+	position: relative;
+}
+
+.site-title {
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	@media (max-width: 767px) {
+		text-align: center;
+	}
+}
+
+.header-date {
+	vertical-align: -15px;
+}
+
+.onsale-banner {
+	position: relative;
+	background: $primary-color;
+	width: 240px;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	/*margin: 0 0 0 auto;*/
+	margin: 30px 0 0 auto;
+
+	&:hover {
+		background: #000;
+	}
+
+	@media (max-width: 767px) {
+		margin: 0 auto;
+	}
+
+	&__link {
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	&__small {
+		color: white;
+		text-transform: uppercase;
+		font-size: 36px;
+		line-height: 36px;
+		clear: both;
+		display: block;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	&__large {
+		color: white;
+		text-transform: uppercase;
+		font-size: 60px;
+		line-height: 62px;
+		clear: both;
+		display: block;
+	}
+
+	&__star {
+		color: white;
+		clear: both;
+		display: block;
+		padding: 15px 0;
+		position: absolute;
+		z-index: 20;
+		width: 100%;
+	}
+
+	/*&:after {
+		content: '';
+		border-top: 40px solid $primary-color;
+		border-right: 120px solid transparent;
+		border-left: 120px solid transparent;
+		border-bottom: 10px solid transparent;
+		width: 240px;
+		left: 0;
+		top: 73px;
+		position: relative;
+		z-index: 10;
+	}*/
+}
+
+.statement {
+	margin-top: 160px;
+}
+
+.black-white {
+	background: rgba(255,255,255,.8);
+	color: #000000;
+	padding: 20px;
+	margin-bottom: 40px;
+	text-transform: uppercase;
+
+	h2 {
+		font-family: $primary-font;
+		font-size: 42px;
+		line-height: 46px;
+		margin: 0;
+	}
+
+	&--small {
+		text-transform: none;
+		font-size: 20px;
+		line-height:24px;
+
+		p {
+			margin: 0;
+			padding: 0;
+		}
+	}
+}

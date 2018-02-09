@@ -1,0 +1,253 @@
+/* GENERAL SITE CONTENT */
+
+.site-content {
+	position: relative;
+	z-index: 10;
+	background: #fff;
+}
+
+/* LANDING */
+
+.content-area {
+	&--40 {
+		margin: 40px auto;
+	}
+}
+
+.wood-bg {
+	background: url(../img/wood-bg.jpg) center top repeat;
+	
+	&--fixed {
+		background-attachment: fixed;
+	}
+}
+
+.newsletter {
+	margin: 50px auto;
+	z-index: 20;
+	position: relative;
+
+	&__label {
+		display: block;
+		color: #ffffff;
+		text-align: center;
+		font-family: $primary-font;
+		font-size: 26px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+	}
+
+	&__input-group {
+		background: $orange;
+		padding: 5px;
+	}
+
+	&__email {
+		font-size: 20px;
+		color: #000000;
+		webkit-appearance: none;
+		-webkit-appearance: none;
+		border: none;
+		border-radius: 0;
+		width: 80%;
+		font-family: $primary-font;
+		height: 50px;
+		text-align: center;
+
+		@media (max-width: 767px) {
+			width: 100%;
+		}
+	}
+
+	&__submit[type="submit"] {
+		font-size: 20px;
+		color: #000000;
+		text-align: center;
+		background: $orange;
+		width: 19.5%;
+		border: none;
+		font-family: $primary-font;
+		height: 50px;
+		padding: 0;
+
+		&:hover {
+			background: #000;
+			color: #fff;
+		}
+
+		@media (max-width: 767px) {
+			width: 100%;
+		}
+	}
+
+}
+
+.newsletter-sticky {
+
+	&--stuck {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 100;
+		background: $orange;
+		padding: 10px;
+
+		.newsletter {
+			width: 80%;
+			margin: 10px auto;
+
+			&__label {
+				font-size: 16px;
+			}
+
+			&__email {
+				font-size: 16px;
+				height: 30px;
+			}
+
+			&__submit {
+				background: $orange;
+				border: 2px solid #fff;
+				color: #fff;
+				font-size: 16px;
+				height: 30px;
+
+				&:hover {
+					background: #000;
+					color: #fff;
+					border: none;
+				}
+
+				@media (max-width: 767px) {
+					margin-top: 10px;
+				}
+			}
+
+		}
+
+	}
+
+}
+
+.up-arrow {
+	border-bottom: 40px solid #ffffff;
+	border-right: 40px solid transparent;
+	border-left: 40px solid transparent;
+	border-top: 40px solid transparent;
+	position: absolute;
+	display: block;
+	bottom: 0;
+	right: 64px;
+
+	@media (max-width: 991px) {
+		display: none;
+	}
+
+}
+
+.mission-statement {
+	margin: 70px auto 160px auto;
+	text-align: center;
+	color: #000000;
+	font-family: $primary-font;
+
+	&__headline {
+		font-size: 32px;
+		text-transform: uppercase;
+		margin: 0 auto 40px auto;
+	}
+
+	&__content {
+		font-size: 20px;
+		line-height: 28px;
+		margin: 0 auto;
+		padding: 0;
+	}
+
+}
+
+.benefits {
+
+	color: #ffffff;
+	text-align: center;
+	padding-bottom: 60px;
+
+	&__row {
+		margin-top: -90px;
+	}
+
+	&__img {
+		border: 13px solid #ffffff;
+	}
+
+	&__headline {
+		font-family: $primary-font;
+		font-size: 52px;
+		margin: 50px auto 20px auto;
+		text-transform: uppercase;
+	}
+
+	&__content {
+		font-family: $primary-font;
+		font-size: 20px;
+		line-height: 28px;
+		margin: 0 auto;
+		padding: 0;
+	}
+
+}
+
+/* logo slideshow */
+
+.sponsors {
+	padding: 65px 0;
+}
+
+.logo-header {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.logo-slider {
+
+	display: flex;
+
+	&__prev, &__slideshow, &__next {
+		display: inline-block;
+	}
+
+	&__prev, &__next {
+		width: 10%;
+		margin: 0;
+		text-align: center;
+	}
+
+	&__slideshow {
+		width: 80%;
+		margin: 0;
+	}
+
+	&__slide {
+		img {
+			padding: 5px;
+		}
+	}
+}
+
+/* general pages */
+
+.page-title {
+	font-size: 36px;
+	font-family: $primary-font;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.success-message {
+	font-size: 24px;
+	font-family: $primary-font;
+	text-align: center;
+	margin: 0 auto;
+}
